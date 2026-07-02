@@ -1,23 +1,28 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-menuButton.addEventListener("click", () => {
+if (menuButton && navMenu) {
 
-    navMenu.classList.toggle("active");
+    menuButton.addEventListener("click", () => {
 
-    if(navMenu.classList.contains("active")){
-        menuButton.textContent="✕";
-    }else{
-        menuButton.textContent="☰";
-    }
+        navMenu.classList.toggle("active");
 
-});
+        if (navMenu.classList.contains("active")) {
+            menuButton.textContent = "✕";
+        } else {
+            menuButton.textContent = "☰";
+        }
+
+    });
+
+}
 
 // ==========================
 // Турнирная таблица
 // ==========================
 
 async function loadStandings() {
+    console.log("loadStandings запустилась");
 
     const table = document.getElementById("standings-body");
 
@@ -28,6 +33,7 @@ async function loadStandings() {
 
         const response = await fetch("data/championship.json");
         const pilots = await response.json();
+        console.log(pilots);
 
         // считаем сумму очков
         const standings = pilots.map(pilot => {
@@ -65,5 +71,6 @@ async function loadStandings() {
     }
 
 }
+console.log("Загрузка таблицы");
 
 loadStandings();
