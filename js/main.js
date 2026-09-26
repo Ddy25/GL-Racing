@@ -1,20 +1,34 @@
 const menuButton = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".site-nav");
 
 if (menuButton && navMenu) {
+    const closeMenu = () => {
+        navMenu.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Открыть меню");
+    };
 
     menuButton.addEventListener("click", () => {
-
-        navMenu.classList.toggle("active");
-
-        if (navMenu.classList.contains("active")) {
-            menuButton.textContent = "✕";
-        } else {
-            menuButton.textContent = "☰";
-        }
-
+        const isOpen = navMenu.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
+        if (isOpen) navMenu.querySelector("a")?.focus();
     });
 
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navMenu.classList.contains("is-open")) {
+            closeMenu();
+            menuButton.focus();
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!event.target.closest(".site-header")) closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 1100) closeMenu();
+    });
 }
 
 // ==========================
@@ -22,7 +36,6 @@ if (menuButton && navMenu) {
 // ==========================
 
 async function loadStandings() {
-    console.log("loadStandings запустилась");
 
     const table = document.getElementById("standings-body");
 
@@ -33,7 +46,6 @@ async function loadStandings() {
 
         const response = await fetch("data/championship.json");
         const pilots = await response.json();
-        console.log(pilots);
 
         // считаем сумму очков
         const standings = pilots.map(pilot => {
@@ -71,6 +83,4 @@ async function loadStandings() {
     }
 
 }
-console.log("Загрузка таблицы");
-
 loadStandings();

@@ -1,21 +1,39 @@
-<header>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="container">
+    <title>GL Racing</title>
 
-        <img src="img/logos/logo.png" class="logo" alt="GL Racing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="prices.html">Прайс</a>
-            <a href="school.html">Школа</a>
-            <a href="racing-team.html">Команда</a>
-            <a href="events.html">События</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="GL Racing — главная">
+            <img src="img/logos/logo.png" alt="" width="56" height="56">
+            <span>GL Racing</span>
+        </a>
+        <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="prices.html">Прайс</a>
+                <a href="school.html">Школа</a>
+                <a href="racing-team.html" aria-current="page">Команда</a>
+                <a href="events.html">События</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
         </nav>
-
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-
 </header>
 
 <section class="page-header">
@@ -32,20 +50,7 @@
 
 </section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GL Racing</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
 <section class="classes-section">
 
@@ -73,7 +78,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot1.jpg">
+            <img src="img/pilots/pilot1.jpg" alt="Денис Галяутдинов" loading="lazy">
 
             <h3>Денис Галяутдинов</h3>
 
@@ -83,7 +88,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot2.jpg">
+            <img src="img/pilots/pilot2.jpg" alt="Сергей Лобанов" loading="lazy">
 
             <h3>Сергей Лобанов</h3>
 
@@ -93,7 +98,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot3.jpg">
+            <img src="img/pilots/pilot3.jpg" alt="Иван Лобанов" loading="lazy">
 
             <h3>Иван Лобанов</h3>
 
@@ -103,7 +108,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot4.jpg">
+            <img src="img/pilots/pilot4.jpg" alt="Кунбаев Мансур" loading="lazy">
 
             <h3>Кунбаев Мансур</h3>
 
@@ -113,7 +118,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot5.jpg">
+            <img src="img/pilots/pilot5.jpg" alt="Шарападин Санжар" loading="lazy">
 
             <h3>Шарападин Санжар</h3>
 
@@ -123,7 +128,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot6.jpg">
+            <img src="img/pilots/pilot6.jpg" alt="Борамбай Альхам" loading="lazy">
 
             <h3>Борамбай Альхам</h3>
 
@@ -133,7 +138,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot7.jpg">
+            <img src="img/pilots/pilot7.jpg" alt="Адылхан Алинур" loading="lazy">
 
             <h3>Адылхан Алинур</h3>
 
@@ -143,7 +148,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot8.jpg">
+            <img src="img/pilots/pilot8.jpg" alt="Молдамурат Бисен" loading="lazy">
 
             <h3>Молдамурат Бисен</h3>
 
@@ -153,7 +158,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot9.jpg">
+            <img src="img/pilots/pilot9.jpg" alt="Доссов Адиль" loading="lazy">
 
             <h3>Доссов Адиль</h3>
 
@@ -163,7 +168,7 @@
 
         <div class="pilot-card">
 
-            <img src="img/pilots/pilot10.jpg">
+            <img src="img/pilots/pilot10.jpg" alt="Ляшкевич Егор" loading="lazy">
 
             <h3>Ляшкевич Егор</h3>
 
@@ -180,3 +185,6 @@
     <p>© 2026 GL Racing</p>
 
 </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,29 +1,5 @@
-<header>
-
-    <div class="container">
-
-        <img src="img/logos/logo.png" class="logo" alt="GL Racing">
-
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="prices.html">Прайс</a>
-            <a href="school.html">Школа</a>
-            <a href="racing-team.html">Команда</a>
-            <a href="events.html">События</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
-
-    </div>
-
-</header>
-
-<section class="page-header">
-    <h1>Прайс</h1>
-</section>
-
-<section>
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +14,35 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="GL Racing — главная">
+            <img src="img/logos/logo.png" alt="" width="56" height="56">
+            <span>GL Racing</span>
+        </a>
+        <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="prices.html" aria-current="page">Прайс</a>
+                <a href="school.html">Школа</a>
+                <a href="racing-team.html">Команда</a>
+                <a href="events.html">События</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Прайс</h1>
+</section>
+
+<section>
+
+
 
 <table>
 
@@ -75,3 +80,6 @@
     <p>© 2026 GL Racing</p>
 
 </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

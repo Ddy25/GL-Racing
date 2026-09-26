@@ -1,32 +1,5 @@
-<header>
-
-    <div class="container">
-
-        <img src="img/logos/logo.png" class="logo" alt="GL Racing">
-
-        <div class="menu-toggle">
-    ☰
-</div>
-
-<nav class="nav-menu">
-    <a href="index.html">Главная</a>
-    <a href="prices.html">Прайс</a>
-    <a href="school.html">Школа</a>
-    <a href="racing-team.html">Команда</a>
-    <a href="events.html">События</a>
-    <a href="gallery.html">Галерея</a>
-    <a href="contacts.html">Контакты</a>
-</nav>
-
-    </div>
-
-</header>
-
-<section class="page-header">
-    <h1>Контакты</h1>
-    <p>Свяжитесь с нами любым удобным способом</p>
-</section>
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +14,34 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="GL Racing — главная">
+            <img src="img/logos/logo.png" alt="" width="56" height="56">
+            <span>GL Racing</span>
+        </a>
+        <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="prices.html">Прайс</a>
+                <a href="school.html">Школа</a>
+                <a href="racing-team.html">Команда</a>
+                <a href="events.html">События</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html" aria-current="page">Контакты</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Контакты</h1>
+    <p>Свяжитесь с нами любым удобным способом</p>
+</section>
+
+
 
 <!-- Основная информация -->
 <section class="contacts-grid">
@@ -104,6 +105,7 @@
     <h2>Как нас найти</h2>
 
     <iframe
+        title="Карта трассы GL Racing в Астане"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d593.82527786288!2d71.54044253717944!3d51.137540287988685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2skz!4v1782931510766!5m2!1sru!2skz"
         width="100%"
         height="500"
@@ -140,3 +142,6 @@
     <p>© 2026 GL Racing</p>
 
 </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
