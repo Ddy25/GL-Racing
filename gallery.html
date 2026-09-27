@@ -1,29 +1,5 @@
-<header>
-
-    <div class="container">
-
-        <img src="img/logos/logo.png" class="logo" alt="GL Racing">
-
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="prices.html">Прайс</a>
-            <a href="school.html">Школа</a>
-            <a href="racing-team.html">Команда</a>
-            <a href="events.html">События</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
-
-    </div>
-
-</header>
-
-<section class="page-header">
-
-<h1>Галерея</h1>
-
-</section>
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,17 +14,46 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="GL Racing — главная">
+            <img src="img/logos/logo.png" alt="" width="56" height="56">
+            <span>GL Racing</span>
+        </a>
+        <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="prices.html">Прайс</a>
+                <a href="school.html">Школа</a>
+                <a href="racing-team.html">Команда</a>
+                <a href="events.html">События</a>
+                <a href="gallery.html" aria-current="page">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="page-header">
+
+<h1>Галерея</h1>
+
+</section>
+
+
 
 <section class="gallery">
 
-<img src="img/gallery/gallery1.jpg">
-<img src="img/gallery/gallery2.jpg">
-<img src="img/gallery/gallery3.jpg">
-<img src="img/gallery/gallery4.jpg">
-<img src="img/gallery/gallery5.jpg">
-<img src="img/gallery/gallery6.jpg">
-<img src="img/gallery/gallery7.jpg">
-<img src="img/gallery/gallery8.jpg">
+<img src="img/gallery/gallery1.jpg" alt="Картинг GL Racing — фото 1" loading="lazy">
+<img src="img/gallery/gallery2.jpg" alt="Картинг GL Racing — фото 2" loading="lazy">
+<img src="img/gallery/gallery3.jpg" alt="Картинг GL Racing — фото 3" loading="lazy">
+<img src="img/gallery/gallery4.jpg" alt="Картинг GL Racing — фото 4" loading="lazy">
+<img src="img/gallery/gallery5.jpg" alt="Картинг GL Racing — фото 5" loading="lazy">
+<img src="img/gallery/gallery6.jpg" alt="Картинг GL Racing — фото 6" loading="lazy">
+<img src="img/gallery/gallery7.jpg" alt="Картинг GL Racing — фото 7" loading="lazy">
+<img src="img/gallery/gallery8.jpg" alt="Картинг GL Racing — фото 8" loading="lazy">
 
 </section>
 
@@ -57,3 +62,6 @@
     <p>© 2026 GL Racing</p>
 
 </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

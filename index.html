@@ -1,201 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>GL Racing</title>
-
+    <meta name="theme-color" content="#0b0e13">
+    <title>GL Racing — картинг в Астане</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
+<body class="home-page">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="GL Racing — главная">
+                <img src="img/logos/logo.png" alt="" width="56" height="56">
+                <span>GL Racing</span>
+            </a>
+            <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+                <a href="index.html" aria-current="page">Главная</a>
+                <a href="prices.html">Прайс</a>
+                <a href="school.html">Школа</a>
+                <a href="racing-team.html">Команда</a>
+                <a href="events.html">События</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
 
-<body>
+    <main>
+        <section class="home-hero" aria-labelledby="hero-title">
+            <div class="home-hero-art" aria-hidden="true"></div>
+            <div class="home-container home-hero-content">
+                <p class="home-eyebrow">Картинг в Астане</p>
+                <h1 id="hero-title">GL Racing</h1>
+                <p class="home-tagline">Воспитываем скорость.<br>Формируем характер.</p>
+                <div class="booking-card">
+                    <p class="booking-label">Свободный заезд</p>
+                    <div class="booking-details"><strong>10 минут</strong><strong>9 000 тг</strong></div>
+                    <a href="contacts.html" class="booking-button">Забронировать заезд</a>
+                </div>
+            </div>
+        </section>
 
-<header>
+        <div class="home-container home-content-grid">
+            <section class="home-benefits" aria-labelledby="benefits-title">
+                <h2 id="benefits-title">Почему выбирают нас</h2>
+                <ul class="benefit-list">
+                    <li class="benefit-item">
+                        <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16l-1.6 8H5.6L4 11Z"/><path d="M8 11V8a4 4 0 0 1 8 0v3M4 15h16"/></svg></span>
+                        <div><h3>Современные карты</h3><p>Регулярное обслуживание<br>и высокая надёжность.</p></div>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6l1-8Z"/></svg></span>
+                        <div><h3>Настоящие эмоции</h3><p>Скорость, борьба и азарт<br>на каждом круге.</p></div>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v6a5 5 0 0 1-10 0V3ZM7 5H4v3a4 4 0 0 0 3 4m10-7h3v3a4 4 0 0 1-3 4M12 14v4m-4 3h8m-8-3h8v3H8z"/></svg></span>
+                        <div><h3>Спортивная команда</h3><p>Участие и победы<br>в соревнованиях.</p></div>
+                    </li>
+                    <li class="benefit-item">
+                        <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                        <div><h3>Удобное расположение</h3><p>Легко добраться<br>из любой точки города.</p></div>
+                    </li>
+                </ul>
+            </section>
 
-    <div class="container">
-
-        <img src="img/logos/logo.png" class="logo" alt="GL Racing">
-
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="prices.html">Прайс</a>
-            <a href="school.html">Школа</a>
-            <a href="racing-team.html">Команда</a>
-            <a href="events.html">События</a>
-            <a href="gallery.html">Галерея</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
-
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <h1>GL Racing</h1>
-
-        <p>
-            Воспитываем скорость. Формируем характер.
-        </p>
-
-        <a href="contacts.html" class="btn">
-            Забронировать заезд
-        </a>
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Почему выбирают нас</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>🏁 Современные карты</h3>
-            <p>Регулярное обслуживание и высокая надежность.</p>
+            <section class="home-laps" aria-labelledby="laps-title">
+                <h2 id="laps-title">Лучшие круги месяца</h2>
+                <table class="laps-table">
+                    <thead><tr><th colspan="2" scope="colgroup">Пилот</th><th scope="col">Время, с</th></tr></thead>
+                    <tbody>
+                        <tr><td>01</td><th scope="row">Иван Лобанов</th><td>38.905</td></tr>
+                        <tr><td>02</td><th scope="row">Денис Галяутдинов</th><td>39.308</td></tr>
+                        <tr><td>03</td><th scope="row">Ивашкин Глеб</th><td>40.286</td></tr>
+                        <tr><td>04</td><th scope="row">Ауезбек Алих</th><td>40.569</td></tr>
+                        <tr><td>05</td><th scope="row">Сатов Искандер</th><td>40.656</td></tr>
+                        <tr><td>06</td><th scope="row">Малабеков Байгельды</th><td>40.713</td></tr>
+                        <tr><td>07</td><th scope="row">Баргалы Нуралы</th><td>40.770</td></tr>
+                        <tr><td>08</td><th scope="row">Князев Ярослав</th><td>41.093</td></tr>
+                        <tr><td>09</td><th scope="row">Мадинаев Дарын</th><td>41.340</td></tr>
+                        <tr><td>10</td><th scope="row">Орынтай Исламбек</th><td>41.520</td></tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
 
-        <div class="card">
-            <h3>🔥 Настоящие эмоции</h3>
-            <p>Скорость, борьба и азарт на каждом круге.</p>
-        </div>
+        <section class="home-location home-container" aria-labelledby="location-title">
+            <h2 id="location-title">Как нас найти</h2>
+            <div class="location-card">
+                <div class="location-info">
+                    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Астана</h3>
+                    <p>Трасса Астана-Караганда, 9/2</p>
+                    <p>Ср — Вс · 13:00–23:00</p>
+                    <a class="location-phone" href="tel:+77783400123">+7 778 340 01 23</a>
+                </div>
+                <div class="location-actions">
+                    <a class="booking-button location-booking" href="contacts.html">Забронировать заезд</a>
+                    <a class="location-route" href="https://2gis.kz/astana/geo/9570784863337788" target="_blank" rel="noopener noreferrer">Открыть маршрут в 2ГИС</a>
+                </div>
+            </div>
+            <div class="location-links">
+                <a href="https://maps.app.goo.gl/9cnndFPXGHxKC2wG6" target="_blank" rel="noopener noreferrer">Google Maps</a><span>·</span>
+                <a href="https://2gis.kz/astana/geo/9570784863337788" target="_blank" rel="noopener noreferrer">2ГИС</a><span>·</span>
+                <a href="https://yandex.kz/maps/ru/-/CTeIiD1P" target="_blank" rel="noopener noreferrer">Яндекс Карты</a>
+            </div>
+        </section>
+    </main>
 
-        <div class="card">
-            <h3>🏆 Спортивная команда</h3>
-            <p>Участие и победы в соревнованиях.</p>
-        </div>
-
-        <div class="card">
-            <h3>📍 Удобное расположение</h3>
-            <p>Легко добраться из любой точки города.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Лучшие круги месяца</h2>
-
-    <table>
-
-        <tr>
-            <th>Пилот</th>
-            <th>Время</th>
-        </tr>
-
-        <tr>
-            <td>Иван Лобанов</td>
-            <td>38.905</td>
-        </tr>
-
-        <tr>
-            <td>Денис Галяутдинов</td>
-            <td>39.308</td>
-        </tr>
-
-        <tr>
-            <td>Ивашкин Глеб</td>
-            <td>40.286</td>
-        </tr>
-
-        <tr>
-            <td>Ауезбек Алих</td>
-            <td>40.569</td>
-        </tr>
-
-        <tr>
-            <td>Сатов Искандер</td>
-            <td>40.656</td>
-        </tr>
-
-        <tr>
-            <td>Малабеков Байгельды</td>
-            <td>40.713</td>
-        </tr>
-
-        <tr>
-            <td>Баргалы Нуралы</td>
-            <td>40.770</td>
-        </tr>
-
-        <tr>
-            <td>Князев Ярослав</td>
-            <td>41.093</td>
-        </tr>
-
-        <tr>
-            <td>Мадинаев Дарын</td>
-            <td>41.340</td>
-        </tr>
-
-        <tr>
-            <td>Орынтай Исламбек</td>
-            <td>41.520</td>
-        </tr>
-
-    </table>
-
-</section>
-
-<section class="map-section">
-
-    <h2>Как нас найти</h2>
-
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d593.82527786288!2d71.54044253717944!3d51.137540287988685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2skz!4v1782931510766!5m2!1sru!2skz"
-        width="100%"
-        height="500"
-        style="border:0;border-radius:15px;"
-        loading="lazy">
-    </iframe>
-
-    <div class="map-links">
-
-        <a href="https://maps.app.goo.gl/9cnndFPXGHxKC2wG6"
-           target="_blank"
-           class="btn">
-            📍 Google Maps
-        </a>
-
-        <a href="https://2gis.kz/astana/geo/9570784863337788"
-           target="_blank"
-           class="btn">
-            🗺️ 2ГИС
-        </a>
-
-        <a href="https://yandex.kz/maps/ru/-/CTeIiD1P"
-           target="_blank"
-           class="btn">
-            🚗 Яндекс Карты
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <p>© 2026 GL Racing</p>
-
-</footer>
-
-<script src="js/main.js"></script>
-
+    <footer>
+        <p>© 2026 GL Racing</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
