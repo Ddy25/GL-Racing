@@ -21,8 +21,7 @@
     margin-inline: auto;
 }
 
-.home-page section,
-.home-page footer {
+.home-page section {
     padding: 0;
 }
 
@@ -264,6 +263,7 @@
 
 .home-location {
     margin-top: 30px;
+    margin-bottom: 36px;
 }
 
 .location-card {
@@ -352,24 +352,6 @@
 
 .location-links a:hover {
     color: var(--home-text);
-}
-
-.home-page .home-footer {
-    display: flex;
-    min-height: 62px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 36px;
-    border-top: 1px solid #27323a;
-    background: transparent;
-    color: #88949d;
-    text-align: left;
-    font-size: 12px;
-}
-
-.home-footer img {
-    display: block;
-    border-radius: 6px;
 }
 
 @media (max-width: 699px) {
