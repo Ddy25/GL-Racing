@@ -1442,5 +1442,51 @@ button:focus-visible {
     .faq-item p {
         padding: 0 18px 18px;
     }
+
+    /* FAQ: десктоп */
+.faq h2 {
+    display: block;
+    left: auto;
+    transform: none;
+    margin-bottom: 48px;
+    font-size: clamp(25px, 6vw, 38px);
+    text-align: center;
 }
+
+.faq h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14px;
+}
+
+@media (min-width: 901px) {
+    .faq {
+        padding: 100px 20px;
+    }
+
+    .faq-inner {
+        max-width: 960px;
+    }
+
+    .faq-item {
+        margin-bottom: 18px;
+    }
+
+    .faq-item summary {
+        padding: 26px 32px;
+        font-size: 20px;
+    }
+
+    .faq-item summary::after {
+        width: 36px;
+        height: 36px;
+        font-size: 26px;
+    }
+
+    .faq-item p {
+        padding: 0 32px 28px;
+        max-width: 780px;
+        font-size: 17px;
+    }
+
 }
