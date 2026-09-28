@@ -1492,4 +1492,16 @@ button:focus-visible {
         font-size: 17px;
     }
 
+    .rating-note {
+    text-align: center;
+    margin-top: 28px;
+    color: #bfc7d5;
+}
+
+.rating-note a {
+    color: #00ff88;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 }
