@@ -1189,7 +1189,7 @@ button:focus-visible {
 
     .cta .container > p {
         margin-bottom: 32px;
-}
+
     }
 
     .page-header {
@@ -1340,4 +1340,107 @@ button:focus-visible {
     .map-links .btn {
         flex-basis: 100%;
     }
+    
+    /* ==========================
+   FAQ
+========================== */
+
+.faq {
+    background: #08111d;
+    padding: 80px 20px;
+}
+
+.faq-inner {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 14px;
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 255, 136, .4);
+    box-shadow: 0 0 25px rgba(0, 255, 136, .15);
+}
+
+.faq-item[open] {
+    border-color: #00ff88;
+    box-shadow: 0 0 25px rgba(0, 255, 136, .2);
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00ff88;
+    border-radius: 50%;
+    color: #00ff88;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "–";
+    background: #00ff88;
+    color: #050b16;
+}
+
+.faq-item summary:focus-visible {
+    outline: 3px solid #91ee8c;
+    outline-offset: 3px;
+    border-radius: 15px;
+}
+
+.faq-item p {
+    padding: 0 24px 22px;
+    color: #bfc7d5;
+    line-height: 1.7;
+}
+
+.faq-item a {
+    color: #00ff88;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .faq {
+        padding: 52px 18px;
+    }
+
+    .faq-item summary {
+        padding: 16px 18px;
+        font-size: 16px;
+    }
+
+    .faq-item p {
+        padding: 0 18px 18px;
+    }
+}
 }
