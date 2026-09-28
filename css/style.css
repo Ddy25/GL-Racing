@@ -1311,6 +1311,7 @@ button:focus-visible {
         bottom: 12px;
         padding: 9px 12px;
     }
+}
 
 
 @media (max-width: 420px) {
@@ -1340,6 +1341,7 @@ button:focus-visible {
     .map-links .btn {
         flex-basis: 100%;
     }
+}
     
     /* ==========================
    FAQ
@@ -1457,6 +1459,7 @@ button:focus-visible {
     left: 50%;
     transform: translateX(-50%);
     bottom: -14px;
+}
 }
 
 @media (min-width: 901px) {
