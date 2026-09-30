@@ -34,7 +34,7 @@
       <offer id="karting-basic">
         <name>GL Racing: картинг, обычный заезд</name>
         <url>https://glracing.kz/karting/basic</url>
-        <price from="true">ЦЕНА</price>
+        <price from="true">9000</price>
         <currencyId>KZT</currencyId>
         <categoryId>29</categoryId>
         <set-ids>s1</set-ids>
@@ -57,7 +57,7 @@
       <offer id="karting-kids">
         <name>GL Racing: детский картинг</name>
         <url>https://glracing.kz/karting/kids</url>
-        <price from="true">ЦЕНА</price>
+        <price from="true">9000</price>
         <currencyId>KZT</currencyId>
         <categoryId>22</categoryId>
         <set-ids>s1</set-ids>
@@ -80,7 +80,7 @@
       <offer id="corporate-race">
         <name>GL Racing: корпоративные гонки</name>
         <url>https://glracing.kz/events/corporate</url>
-        <price from="true">ЦЕНА</price>
+        <price from="true">16000</price>
         <currencyId>KZT</currencyId>
         <categoryId>25</categoryId>
         <set-ids>s2</set-ids>
@@ -103,7 +103,7 @@
       <offer id="tournaments">
         <name>GL Racing: турниры и чемпионаты по картингу</name>
         <url>https://glracing.kz/events/tournaments</url>
-        <price from="true">ЦЕНА</price>
+        <price from="true">30000</price>
         <currencyId>KZT</currencyId>
         <categoryId>25</categoryId>
         <set-ids>s2</set-ids>
