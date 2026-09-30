@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog date="2026-09-30T12:00">
+  <shop>
+    <name>GL Racing</name>
+    <company>GL Racing</company>
+    <url>https://glracing.kz</url>
+    <currencies>
+      <currency id="KZT" rate="1"/>
+    </currencies>
+
+    <categories>
+      <category id="1">Исполнитель</category>
+      <category id="22" parentId="1">Тренеры</category>
+      <category id="25" parentId="1">Организация мероприятий</category>
+      <category id="29" parentId="1">Разное</category>
+    </categories>
+
+    <!-- URL сета = страница вашего сайта, где перечислены эти услуги.
+         Именно её сниппет в поиске будет дополнен. Замените на реальные страницы. -->
+    <sets>
+      <set id="s1">
+        <name>Картинг в ГОРОД</name>
+        <url>https://glracing.kz/karting</url>
+      </set>
+      <set id="s2">
+        <name>Гонки, соревнования и турниры в ГОРОД</name>
+        <url>https://glracing.kz/tournaments</url>
+      </set>
+    </sets>
+
+    <offers>
+
+      <!-- 1. Заезд на карте -->
+      <offer id="karting-basic">
+        <name>GL Racing: картинг, обычный заезд</name>
+        <url>https://glracing.kz/karting/basic</url>
+        <price from="true">ЦЕНА</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>29</categoryId>
+        <set-ids>s1</set-ids>
+        <picture>https://glracing.kz/images/feed/karting-basic.jpg</picture>
+        <description>Заезд на картинге для взрослых и подростков: инструктаж, экипировка, хронометраж кругов.</description>
+        <sales_notes>Цена за один заезд. Бронирование по телефону или на сайте.</sales_notes>
+        <param name="Рейтинг">0</param>
+        <param name="Число отзывов">0</param>
+        <param name="Годы опыта">ЧИСЛО_ЛЕТ</param>
+        <param name="Регион">ГОРОД, Казахстан</param>
+        <param name="Конверсия">1</param>
+        <param name="Организация">true</param>
+        <param name="Выполняется по адресу исполнителя">true</param>
+        <param name="Ссылка на телефон">tel:+7XXXXXXXXXX</param>
+        <param name="Ссылка на создание заказа">https://glracing.kz/booking</param>
+        <param name="Об исполнителе">Картинг-клуб GL Racing: трасса, прокат карт, организация заездов и соревнований.</param>
+      </offer>
+
+      <!-- 2. Детский картинг -->
+      <offer id="karting-kids">
+        <name>GL Racing: детский картинг</name>
+        <url>https://glracing.kz/karting/kids</url>
+        <price from="true">ЦЕНА</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>22</categoryId>
+        <set-ids>s1</set-ids>
+        <picture>https://glracing.kz/images/feed/karting-kids.jpg</picture>
+        <description>Заезды и занятия по картингу для детей с инструктором, детские карты и защитная экипировка.</description>
+        <sales_notes>Возрастные ограничения уточняйте при бронировании.</sales_notes>
+        <param name="Рейтинг">0</param>
+        <param name="Число отзывов">0</param>
+        <param name="Годы опыта">ЧИСЛО_ЛЕТ</param>
+        <param name="Регион">ГОРОД, Казахстан</param>
+        <param name="Конверсия">1</param>
+        <param name="Организация">true</param>
+        <param name="Выполняется по адресу исполнителя">true</param>
+        <param name="Ссылка на телефон">tel:+7XXXXXXXXXX</param>
+        <param name="Ссылка на создание заказа">https://glracing.kz/booking</param>
+        <param name="Об исполнителе">Картинг-клуб GL Racing: трасса, прокат карт, организация заездов и соревнований.</param>
+      </offer>
+
+      <!-- 3. Корпоративные гонки -->
+      <offer id="corporate-race">
+        <name>GL Racing: корпоративные гонки</name>
+        <url>https://glracing.kz/events/corporate</url>
+        <price from="true">ЦЕНА</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>25</categoryId>
+        <set-ids>s2</set-ids>
+        <picture>https://glracing.kz/images/feed/corporate.jpg</picture>
+        <description>Организация корпоративных гонок и тимбилдинга на картинге: квалификация, финал, награждение.</description>
+        <sales_notes>Цена зависит от числа участников.</sales_notes>
+        <param name="Рейтинг">0</param>
+        <param name="Число отзывов">0</param>
+        <param name="Годы опыта">ЧИСЛО_ЛЕТ</param>
+        <param name="Регион">ГОРОД, Казахстан</param>
+        <param name="Конверсия">1</param>
+        <param name="Организация">true</param>
+        <param name="Выполняется по адресу исполнителя">true</param>
+        <param name="Ссылка на телефон">tel:+7XXXXXXXXXX</param>
+        <param name="Ссылка на создание заказа">https://glracing.kz/booking</param>
+        <param name="Об исполнителе">Картинг-клуб GL Racing: трасса, прокат карт, организация заездов и соревнований.</param>
+      </offer>
+
+      <!-- 4. Турниры и чемпионаты -->
+      <offer id="tournaments">
+        <name>GL Racing: турниры и чемпионаты по картингу</name>
+        <url>https://glracing.kz/events/tournaments</url>
+        <price from="true">ЦЕНА</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>25</categoryId>
+        <set-ids>s2</set-ids>
+        <picture>https://glracing.kz/images/feed/tournaments.jpg</picture>
+        <description>Открытые турниры и клубный чемпионат по картингу: регистрация, судейство, призы и общий зачёт.</description>
+        <sales_notes>Цена за участие. Календарь турниров на сайте.</sales_notes>
+        <param name="Рейтинг">0</param>
+        <param name="Число отзывов">0</param>
+        <param name="Годы опыта">ЧИСЛО_ЛЕТ</param>
+        <param name="Регион">ГОРОД, Казахстан</param>
+        <param name="Конверсия">1</param>
+        <param name="Организация">true</param>
+        <param name="Выполняется по адресу исполнителя">true</param>
+        <param name="Ссылка на телефон">tel:+7XXXXXXXXXX</param>
+        <param name="Ссылка на создание заказа">https://glracing.kz/tournaments/register</param>
+        <param name="Об исполнителе">Картинг-клуб GL Racing: трасса, прокат карт, организация заездов и соревнований.</param>
+      </offer>
+
+    </offers>
+  </shop>
+</yml_catalog>
